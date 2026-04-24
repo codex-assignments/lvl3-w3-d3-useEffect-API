@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap");
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: .5rem 2rem;
+  background: rgba(26, 26, 46, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+  color: #ccc;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  color: #ffffff;
+  margin: 0;
+  background: linear-gradient(to right, #fff, #a5a5a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.wrapper {
+  display:flex;
+  flex-direction: column;
+  max-width:80vw;
+  margin: 0 auto;
+
+}
+
+.card {
+  max-width: 80vw;
+  margin: 2rem auto;
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  color: #e0e0e0;
+  font-family: "Inter", system-ui, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.header {
+  padding: 1.5rem;
+  background: linear-gradient(to bottom, #2a2a2a, #1a1a1a);
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #888;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.pic img,
+.content {
+  max-width: 70vw;
+  padding: 1.5rem;
+  line-height: 1.6;
+}
+.explanation {
+  font-size: 1rem;
+  color: #ccc;
+  text-align: justify;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+input[type="date"] {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+input[type="date"]:focus {
+  border-color: #646cff;
+  box-shadow: 0 0 8px rgba(100, 108, 255, 0.4);
+}
+
+footer {
+  text-align: center;
+  margin: 20px
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+}
