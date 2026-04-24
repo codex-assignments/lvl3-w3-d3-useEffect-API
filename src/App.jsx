@@ -14,7 +14,7 @@ return (
   <div className="wrapper">
     <NavBar />
     <Routes>
-      <Route path="/lvl3-w3-d3-useEffect-API/" element={<Home />} />
+      <Route path="/lvl3-w3-d3-useEffect-API/" index element={<Home />} />
       <Route path="/lvl3-w3-d3-useEffect-API/about" element={<About />} />
     </Routes>
     <Footer />
