@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://codex-assignments.github.io/lvl3-w3-d3-useEffect-API/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
